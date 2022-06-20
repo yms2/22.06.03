@@ -21,54 +21,57 @@
     text-align: center;
 }
 #header .nav_m{
-    font-size: 22px;float: left;margin: 65px 0 0 480px; 
+    font-size: 22px;float: left;margin: 65px 0 0 520px;
 }
 #header .nav_m li{float:left; margin-right: 5px;
     padding-right: 80px; text-align: center;line-height: 50px;
 }
 #header .nav_m li a{display: block; height: 50px; width: 100%;}
 
-#header nav li a:hover{ color: rgb(0, 0, 0);color:aqua;}
+#header nav li a:hover{ color: rgb(0, 0, 0);color: aqua;}
 #header nav:hover + .submenu, .submenu:hover{height: 120px; }
 #header nav:hover + .submenu, .submenu:hover .sub1{display: block;}
 #header nav:hover + .submenu, .submenu:hover .sub2{display: block;}
 #header nav:hover + .submenu, .submenu:hover .sub3{display: block;}
-#header .submenu{width: 100%;height: 0px;background-color:rgba(255, 255, 255,1);
-position: absolute; top: 120px;left: 0px;
-transition-delay: 0;   
-transition-duration: 0.3s;
+.submenu{width: 100%;height: 0px;background-color:white;
+position: absolute; top: 120px;left: 0px; z-index: 9999;
+transition-delay: 0s;
+transition-duration: 0.7s;
 transition-property: all;
-transition-timing-function:ease-in-out;
-font-size: 20px;
+transition-timing-function: ease-in-out;font-size: 20px;
 }
 #header .submenu a:hover{color: aqua;}
-
-
-#header .submenu .sub1{
+.submenu .sub1{
 float: left;
-margin-left: 856px;
-transition-delay: 0.3s;
+margin-left: 892px;
 }
-#header .submenu .sub2{
+.submenu .sub2{
     float: left;
-    margin-left: 210px;
+    margin-left: 200px;
 }
-#header .submenu .sub3{
+.submenu .sub3{
     float: left;
-    margin-left: 60px;
+    margin-left: 70px;
 }
-#header .submenu li{
+.submenu li{
     margin-top: 10px;
 }
 
-#header .submenu ul{
+.submenu ul{
     display: none;
 }
 
-#header nav:hover +.submenu ul{
+#header nav:hover +.submenu .sub1{
     display: block;
 }
 
+#header nav:hover +.submenu .sub2{
+    display: block;
+}
+
+#header nav:hover +.submenu .sub3{
+    display: block;
+}
 
 #header .sns >ul{
     float: right; margin-top:70px;
@@ -377,20 +380,21 @@ background-color: #fff;}
       }
       /* 네비게이션 */
       #header .nav_m{
-          font-size: 15px;float: left;margin: 25px 0 0 180px; 
+        font-size: 15px;float: left;margin: 25px 0 0 180px; 
+    }
+    .submenu{
+        top: 80px;font-size: 15px;
+    }
+    #header nav:hover + .submenu, .submenu:hover{height: 100px; } 
+    .submenu .sub1{
+      float: left;
+      margin-left: 349px;
       }
-      .submenu{
-          top: 80px;font-size: 15px;
+      .submenu .sub2{
+          float: left;
+          margin-left: 190px;
       }
-      #header nav:hover + .submenu, .submenu:hover{height: 100px; } 
-      .submenu .sub1{
-        float: left;
-        margin-left: 349px;
-        }
-        .submenu .sub2{
-            float: left;
-            margin-left: 190px;
-        }
+  
     
     #header .sns{
         display: none;
